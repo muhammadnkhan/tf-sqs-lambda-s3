@@ -1,6 +1,6 @@
 resource "local_file" "lambda1_src" {
   filename = "${path.module}/lambda_src/lambda1/main.py"
-  content  = <<'PY'
+  content  = <<PY
 import json
 import os
 import boto3
