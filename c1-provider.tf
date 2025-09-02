@@ -22,4 +22,5 @@ terraform {
 
 provider "aws" {
   region = var.aws_region
+  profile = "AWSAdministratorAccess-442167860221"
 }
