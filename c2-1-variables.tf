@@ -9,3 +9,15 @@ variable "project" {
   type        = string
   default     = "hello-sqs-s3"
 }
+
+variable "environment" {
+  description = "SDLC Environment"
+  type        = string
+  default     = "dev"
+}
+
+variable "owner" {
+  description = "Team or owner of resource"
+  type        = string
+  default     = "marketing"
+}

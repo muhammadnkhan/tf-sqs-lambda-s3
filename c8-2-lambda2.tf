@@ -13,4 +13,5 @@ resource "aws_lambda_function" "lambda2" {
   }
 
   timeout = 30
+  tags = local.common_tags
 }

@@ -1,6 +1,7 @@
 resource "aws_iam_role" "lambda1" {
   name               = "${local.lambda1_name}-role"
   assume_role_policy = data.aws_iam_policy_document.lambda_assume_role.json
+  tags = local.common_tags
 }
 
 # Basic logs policy attched to lambda1 role

@@ -11,4 +11,5 @@ resource "aws_lambda_function" "lambda1" {
       QUEUE_URL = aws_sqs_queue.queue.id
     }
   }
+  tags = local.common_tags
 }
